@@ -2,20 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #1c1c1c;
+    --card: #ffffff;
+    --card-foreground: #1c1c1c;
+    --popover: #ffffff;
+    --popover-foreground: #1c1c1c;
+    --primary: #e63946;
+    --primary-foreground: #ffeff7;
+    --secondary: #f4f4f4;
+    --secondary-foreground: #1a1a1a;
+    --muted: #f4f4f4;
+    --muted-foreground: #767676;
+    --accent: #f4f4f4;
+    --accent-foreground: #1a1a1a;
+    --destructive: #ff4d4d;
+    --destructive-foreground: #fafafa;
+    --border: #e6e6e6;
+    --input: #e6e6e6;
+    --ring: #e63946;
+    --radius: 0.5rem;
+    --chart-1: #e74c3c;
+    --chart-2: #2ecc71;
+    --chart-3: #1abc9c;
+    --chart-4: #f1c40f;
+    --chart-5: #f39c12;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .dark {
+    --background: #141414;
+    --foreground: #f2f2f2;
+    --card: #1a1a1a;
+    --card-foreground: #f2f2f2;
+    --popover: #171717;
+    --popover-foreground: #f2f2f2;
+    --primary: #e63946;
+    --primary-foreground: #ffeff7;
+    --secondary: #262626;
+    --secondary-foreground: #fafafa;
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    --accent: #292929;
+    --accent-foreground: #fafafa;
+    --destructive: #991b1b;
+    --destructive-foreground: #fddcdc;
+    --border: #262626;
+    --input: #262626;
+    --ring: #e63946;
+    --chart-1: #3498db;
+    --chart-2: #1abc9c;
+    --chart-3: #f39c12;
+    --chart-4: #9b59b6;
+    --chart-5: #e74c3c;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  p,
+  a,
+  span {
+    font-weight: 300;
+  }
 }
