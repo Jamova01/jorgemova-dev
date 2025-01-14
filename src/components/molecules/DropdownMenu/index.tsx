@@ -1,5 +1,5 @@
 import { NavigationLink } from "@/types/types";
-import { NavMenu } from "../NavMenu";
+import { NavMenu } from "@/components/molecules";
 
 interface DropdownMenuProps {
   isOpen: boolean;
