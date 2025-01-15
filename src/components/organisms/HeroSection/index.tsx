@@ -54,7 +54,7 @@ export const HeroSection = () => {
           icon={<FaArrowCircleDown />}
           className="justify-center"
         >
-          Download
+          Download My CV
         </Button>
       </div>
     </section>
