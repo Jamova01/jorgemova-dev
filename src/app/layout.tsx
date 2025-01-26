@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { Navbar } from "@/components/molecules";
+import { Footer } from "@/components/organisms/Footer";
 import { NAVIGATION_LINKS } from "@/data/navigationLinks";
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           <Navbar items={NAVIGATION_LINKS} />
         </header>
         <main className="flex min-h-screen w-full flex-col">{children}</main>
+        <Footer />
       </body>
     </html>
   );
