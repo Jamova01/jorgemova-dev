@@ -4,9 +4,6 @@ import { Heading, Text, Button } from "@/components/atoms";
 import { FaArrowCircleDown } from "react-icons/fa";
 import Link from "next/link";
 
-/**
- * Downloads a file when triggered
- */
 const handleDownloadCV = () => {
   const link = document.createElement("a");
   link.href = "/files/Dev_Fullstack-Jorge_Armando_Morales.pdf";
@@ -18,23 +15,26 @@ const handleDownloadCV = () => {
 
 export const HeroSection = () => {
   return (
-    <section className="flex flex-col px-8 pt-20 pb-8 gap-8">
+    <section className="flex flex-col px-8 pt-20 gap-8">
       <header className="flex flex-col gap-5">
         <Heading level={1} className="text-start sm:text-center">
           <span className="inline-block animate-wave origin-emoji">👋</span>
-          Hello, I'm{" "}
-          <span className="block sm:inline-flex text-primary">
+          Hi there! I’m{" "}
+          <span className="block text-6xl font-bold text-primary">
             Jorge Morales
           </span>
         </Heading>
         <Heading level={2} className="text-start sm:text-center">
-          Frontend & Backend Developer crafting scalable solutions.
+          Full Stack Developer building seamless and scalable digital
+          experiences.
         </Heading>
       </header>
 
       <article className="flex flex-col md:max-w-[500px] md:mx-auto">
         <Text className="leading-relaxed text-justify sm:text-center">
-          {`Colombian 🇨🇴 developer with 3+ years of experience in React ⚛️, Python 🐍, and Node.js. Passionate about creating impactful digital\u00A0solutions.`}
+          {`I’m a Colombian 🇨🇴 Full Stack Developer with over 3 years 
+          of experience in technologies like React ⚛️, Python 🐍, and Node.js.
+          I’m passionate about delivering impactful digital solutions that make a difference.`}
         </Text>
       </article>
 
@@ -45,7 +45,7 @@ export const HeroSection = () => {
       >
         <Link href="#contact" legacyBehavior>
           <Button variant="primary" className="justify-center capitalize">
-            Get in Touch
+            Let’s Connect!
           </Button>
         </Link>
         <Button
@@ -54,7 +54,7 @@ export const HeroSection = () => {
           icon={<FaArrowCircleDown />}
           className="justify-center"
         >
-          Download My CV
+          Get My CV
         </Button>
       </div>
     </section>
