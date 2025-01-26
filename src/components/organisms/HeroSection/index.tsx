@@ -1,8 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { Heading, Text, Button } from "@/components/atoms";
 import { FaArrowCircleDown } from "react-icons/fa";
-import Link from "next/link";
 
 const handleDownloadCV = () => {
   const link = document.createElement("a");
