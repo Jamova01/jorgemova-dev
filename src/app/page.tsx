@@ -1,9 +1,19 @@
-import { HeroSection } from "@/components/organisms";
+import {
+  HeroSection,
+  AboutMeSection,
+  ContactSection,
+  ProjectsSection,
+  SkillsSection,
+} from "@/components/organisms";
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-8 max-w-6xl min-h-screen mx-auto scroll-smooth">
+    <div className="flex flex-col gap-20 min-h-screen scroll-smooth">
       <HeroSection />
+      <AboutMeSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
     </div>
   );
 }
