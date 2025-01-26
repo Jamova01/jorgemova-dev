@@ -1,6 +1,6 @@
 interface ButtonProps {
   children?: React.ReactNode;
-  variant?: "primary" | "secondary" | "outline" | "icon";
+  variant?: "primary" | "secondary" | "outline" | "icon" | "cta-gradient";
   onClick?: () => void;
   disabled?: boolean;
   type?: "button" | "submit";
@@ -25,6 +25,8 @@ export const Button: React.FC<ButtonProps> = ({
     outline:
       "text-lg font-bold border-2 border-primary-foreground hover:border-primary text-primary-foreground bg-transparent hover:text-primary transition-all",
     icon: "focus:outline-none hover:text-primary transition-all",
+    "cta-gradient":
+      "text-lg font-bold text-primary-foreground bg-gradient-to-r from-[#e63946] via-[#9b59b6] to-[#3498db] hover:opacity-90 transition-all shadow-lg hover:shadow-xl rounded-full px-6 py-3",
   };
 
   const buttonClasses = `flex items-center px-4 py-2 rounded-full text-base ${
