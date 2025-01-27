@@ -4,6 +4,7 @@ export type SocialNetwork = {
   id?: number;
   name?: string;
   icon?: React.ReactNode;
+  url?: string | UrlObject;
 };
 
 export type Skill = {
