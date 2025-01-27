@@ -6,12 +6,14 @@ interface NavMenuProps {
   items: NavigationLink[];
   className: string;
   orientation?: "horizontal" | "vertical";
+  onItemClick?: () => void;
 }
 
 export const NavMenu: React.FC<NavMenuProps> = ({
   items,
   className,
   orientation = "horizontal",
+  onItemClick,
 }) => {
   return (
     <ul
@@ -23,7 +25,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
     >
       {items?.map(({ id, label, href }) => (
         <li key={id}>
-          <Link href={href}>
+          <Link href={href} onClick={onItemClick}>
             <Text className="text-xl font-bold capitalize hover:text-primary">
               {label}
             </Text>
