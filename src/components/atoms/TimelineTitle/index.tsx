@@ -10,3 +10,5 @@ export const TimelineTitle = React.forwardRef<
     {...props}
   />
 ));
+
+TimelineTitle.displayName = "TimelineTitle";
