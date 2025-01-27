@@ -1,4 +1,3 @@
-export { Logo } from "./Logo";
 export { Tabs } from "./Tabs";
 export { Navbar } from "./Navbar";
 export { NavMenu } from "./NavMenu";
