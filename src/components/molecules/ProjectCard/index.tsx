@@ -13,9 +13,9 @@ export const ProjectCard: React.FC<Project> = ({
 }) => {
   return (
     <div
-      className="relative flex flex-col rounded-xl overflow-hidden shadow-md transition-shadow duration-300 
-                 min-w-80 sm:max-w-[452px] md:max-w-[480px] lg:max-w-[500px] 
-                 bg-card text-card-foreground hover:shadow-lg hover:shadow-primary"
+      className="relative flex flex-col rounded-xl overflow-hidden shadow-md
+      transition-shadow duration-300 min-w-80 sm:max-w-[452px] md:max-w-[480px]
+      lg:max-w-[500px] bg-card text-card-foreground hover:shadow-lg hover:shadow-primary"
     >
       <div className="relative w-full h-52">
         <Image
@@ -26,7 +26,12 @@ export const ProjectCard: React.FC<Project> = ({
           className="rounded-t-lg"
         />
         <Link href={deploy}>
-          <span className="absolute flex justify-center items-center p-3 rounded-full bg-muted text-muted-foreground hover:text-secondary-foreground transition-all duration-300 right-3 top-3 shadow-md">
+          <span
+            className={`absolute flex justify-center items-center p-3
+            rounded-full bg-muted text-muted-foreground
+            hover:text-secondary-foreground transition-all duration-300
+            right-3 top-3 shadow-md`}
+          >
             <FaExternalLinkAlt />
           </span>
         </Link>
@@ -51,7 +56,10 @@ export const ProjectCard: React.FC<Project> = ({
         </Heading>
         <div className="flex justify-end">
           <Link href={github}>
-            <p className="text-sm font-bold text-muted-foreground hover:text-primary underline transition duration-300">
+            <p
+              className={`text-sm font-bold text-muted-foreground
+            hover:text-primary underline transition duration-300`}
+            >
               View Code
             </p>
           </Link>
