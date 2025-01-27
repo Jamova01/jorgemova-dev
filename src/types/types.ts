@@ -17,6 +17,9 @@ export type Project = {
   image: string;
   title: string;
   description: string;
+  technologies: string[];
+  github: string;
+  deploy: string;
 };
 
 export type Experience = {
