@@ -13,9 +13,24 @@ import {
 } from "react-icons/fa";
 
 const socialNetworksData = [
-  { id: 1, name: "GitHub", icon: <FaGithub /> },
-  { id: 2, name: "LinkedIn", icon: <FaLinkedin /> },
-  { id: 3, name: "Email", icon: <FaEnvelope /> },
+  {
+    id: 1,
+    name: "GitHub",
+    icon: <FaGithub />,
+    url: "https://github.com/Jamova01",
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/jamova01/",
+  },
+  {
+    id: 3,
+    name: "Email",
+    icon: <FaEnvelope />,
+    url: "mailto:jorgemova01@gmail.com",
+  },
 ];
 
 const tabs = [
