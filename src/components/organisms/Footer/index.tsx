@@ -1,7 +1,7 @@
+import Link from "next/link";
 import { Heading, Text } from "@/components/atoms";
 import { SocialNetworks } from "@/components/molecules";
-import { FaInstagram, FaMedium, FaTwitter } from "react-icons/fa";
-import Link from "next/link";
+import { FaInstagram, FaMedium } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 
 const socialNetworksData = [
