@@ -1,32 +1,14 @@
 export const projectsData = [
   {
     id: 1,
-    image:
-      "https://images.pexels.com/photos/20701001/pexels-photo-20701001/free-photo-of-smart-devices-colorful-background-template.jpeg",
-    title: "Crypto Screener Application",
-    description: `I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to specimen book.`,
-  },
-  {
-    id: 2,
-    image:
-      "https://images.pexels.com/photos/20701001/pexels-photo-20701001/free-photo-of-smart-devices-colorful-background-template.jpeg",
-    title: "Crypto Screener Application",
-    description: `I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to specimen book.`,
-  },
-  {
-    id: 3,
-    image:
-      "https://images.pexels.com/photos/20701001/pexels-photo-20701001/free-photo-of-smart-devices-colorful-background-template.jpeg",
-    title: "Crypto Screener Application",
-    description: `I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to specimen book.`,
+    image: "https://i.imgur.com/Z5VsulD.png",
+    title: "Shopi <<e-commerce>>",
+    description: `This repository hosts the source code of an e-commerce
+    project built using React, Vite, and Tailwind CSS. The main objective
+    of this project is to provide a solid and efficient foundation for
+    developing a modern and highly customizable online store.`,
+    technologies: ["React", "Vite", "Tailwind CSS"],
+    github: "https://github.com/Jamova01/shopi",
+    deploy: "https://shopi-nine.vercel.app/",
   },
 ];
