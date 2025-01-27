@@ -1,8 +1,8 @@
-import { Badge } from "@/components/atoms/Badge";
-import { Heading } from "@/components/atoms/Heading";
-import { Project } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge, Heading } from "@/components/atoms";
+import { Project } from "@/types/types";
+
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const ProjectCard: React.FC<Project> = ({
