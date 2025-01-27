@@ -12,7 +12,9 @@ export const SocialNetworkItem: React.FC<SocialNetworkItemProps> = ({
     <li>
       <Link
         href={`${network.url}`}
-        className="flex items-center justify-center gap-2 px-2 md:px-4 py-1 md:py-2 border hover:border-primary text-sm lg:text-lg hover:text-primary font-bold rounded-lg"
+        className={`flex items-center justify-center gap-2 px-2 md:px-4 py-1
+          md:py-2 border hover:border-primary text-sm lg:text-lg
+          hover:text-primary font-bold rounded-lg`}
       >
         <span className="text-sm md:lg">{network.icon}</span>
         {network.name && network.name}
