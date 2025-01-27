@@ -1,5 +1,5 @@
 interface Text {
-  children: string;
+  children: React.ReactNode;
   className?: React.ReactNode;
 }
 
